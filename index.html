@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blockchain </h1>
+        <button id="create-blockchain-btn">Create Blockchain</button>
+        <div id="block-form" class="hidden">
+            <h2>Add Block</h2>
+            <form id="add-block-form">
+                <label for="data">Data:</label>
+                <input type="text" id="data" name="data" required>
+                <button type="submit">Add Block</button>
+            </form>
+        </div>
+        <button id="show-blockchain-btn" class="hidden">Show Blockchain</button>
+        <div id="blockchain-display" class="hidden">
+            <h2>Blockchain Contents</h2>
+            <pre id="blockchain-content"></pre>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.4.2/sha.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
